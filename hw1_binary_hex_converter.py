@@ -5,7 +5,7 @@
 
 
 #設計一個輸入為10進位，輸出為2進位與16進位數字的程式
-dec=eval(input('請輸入一個10進位的數:'))
+dec=float(input('請輸入一個10進位的數:'))
 if dec>256 or dec<0:
     print('請重新輸入')
 else:   
@@ -41,9 +41,9 @@ else:
 
     #10進位小數部分轉16進位     
     while d2<1 and d2>0:
-            d2 *= 16
-            digit = int(d2)
-            h2+= h[digit]
+            d2*=16
+            digit=int(d2)
+            h2+=h[digit]
     if d2==0:
         print('轉換為2進位:',b1)
         print('轉換為16進位:',h1)
